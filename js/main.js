@@ -64,6 +64,11 @@ jQuery(document).ready(function($) {
                     items:3,
                     nav:true,
                     loop:false
+                },
+                1400:{
+                    items:4,
+                    nav:true,
+                    loop:false
                 }
             }
         })
