@@ -419,21 +419,21 @@ header {
 }
 
 .Modern-Slider .item-1 .image {
-  background-image: url(../img/slide_01_compressed.jpg);
+  background-image: url(../img/Presentacion/v01.JPG);
 }
 
 .Modern-Slider .item-2 .image {
-  background-image: url(../img/slide_02_compress.jpg);
+  background-image: url(../img/Presentacion/v02.jpg);
 }
 
 .Modern-Slider .item-3 .image {
-  background-image: url(../img/slide_03_compress.jpg);
+  background-image: url(../img/Presentacion/v03.jpg);
 }
 .Modern-Slider .item-4 .image {
-  background-image: url(../img/slide_04.JPG);
+  background-image: url(../img/Presentacion/v04.jpeg);
 }
 .Modern-Slider .item-5 .image {
-  background-image: url(../img/05.JPG);
+  background-image: url(../img/Presentacion/v05.jpeg);
 }
 
 .Modern-Slider .PrevArrow:before{content:'\f104';}
