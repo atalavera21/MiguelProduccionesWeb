@@ -317,6 +317,46 @@ header {
 }
 
 
+/* ***************Modales Portafolio  *******************/
+
+.modal-body .carousel-inner > .item {
+  text-align: center;
+  background-color: #f8f8f8; /* Fondo claro para imágenes más pequeñas */
+}
+
+.modal-body .carousel-inner > .item > img {
+  max-width: 100%;
+  max-height: 50vh; /* Limita la altura máxima de la imagen */
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain; /* Mantiene la proporción de la imagen */
+}
+
+body.modal-open-scrollable {
+  position: fixed;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.modal-open-scrollable .modal {
+  overflow-y: auto;
+}
+
+body.modal-open-scrollable {
+  position: fixed;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.modal-open-scrollable .modal {
+  overflow-y: auto;
+}
+
+
+
+/* ************************************************** */
+
 /* Slider Style */
 
 .slider .content-section {
@@ -409,6 +449,9 @@ header {
   color:#FFF;
   z-index:5;
 }
+
+
+
 
 .Modern-Slider .item .image {
   width: 100%;
@@ -801,6 +844,7 @@ header {
   padding: 0;
   margin: 0;
   list-style: none;
+  
 }
 
 #blog .tabgroup ul li {
@@ -809,6 +853,7 @@ header {
   margin-bottom: 10px;
   padding-bottom: 20px;
   border-bottom: 1px solid #ddd;
+  
 }
 
 #blog .tabgroup ul li:last-child {
@@ -825,6 +870,7 @@ header {
 }
 #blog .tabgroup ul li .text-content {
   display: inline;
+
 }
 
 #blog .item .text-content h4 {
@@ -834,7 +880,7 @@ header {
   font-size: 21px;
   font-weight: 600;
   color: #232323;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.5px;  
 }
 
 #blog .item .text-content span {
@@ -848,6 +894,7 @@ header {
 
 #blog .item .text-content .accent-button {
   margin-top: 25px;
+  
 }
 
 
@@ -1029,7 +1076,28 @@ header {
     z-index:5;
   }
 
+
+
+  /* Modales */
   
+  .modal {
+    padding-top: 0 !important;
+  }
+  .modal-dialog {
+      width: 96%;
+      margin: 20px auto;
+      vertical-align: middle;
+  }
+  /* Centrado vertical usando Flexbox para móviles */
+  .modal-dialog {
+      display: flex;
+      align-items: center;
+      height: 100%;
+  }
+  .modal-content {
+      margin: auto;
+  }
+
 
 }
 
@@ -1084,4 +1152,24 @@ header {
     padding-right: 15px;
   }
 
+}
+
+@media (max-width: 767px) {
+  .modal {
+      padding-top: 0 !important;
+  }
+  .modal-dialog {
+      width: 96%;
+      margin: 20px auto;
+      vertical-align: middle;
+  }
+  /* Centrado vertical usando Flexbox para móviles */
+  .modal-dialog {
+      display: flex;
+      align-items: center;
+      height: 60%;
+  }
+  .modal-content {
+      margin: auto;
+  }
 }

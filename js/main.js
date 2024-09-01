@@ -3,6 +3,21 @@ jQuery(document).ready(function($) {
     'use strict';
 
 
+         $('#bodaModal').on('show.bs.modal', function () {
+             var height = $(window).height() - 80; // 60px de margen
+             $(this).find('.modal-body').css('max-height', height);
+         })
+         // Reinicia el carrusel al cerrar el modal
+         $('#bodaModal').on('hidden.bs.modal', function () {
+             $(this).find('.carousel').carousel(0);
+         });
+
+
+        
+
+        
+
+
         $(".Modern-Slider").slick({
             autoplay:true,
             speed:1000,
