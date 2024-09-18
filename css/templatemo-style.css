@@ -336,7 +336,7 @@ header {
 body.modal-open-scrollable {
   position: fixed;
   width: 100%;
-  overflow-y: scroll;
+  height: 100%;
 }
 
 .modal-open-scrollable .modal {
@@ -844,7 +844,7 @@ body.modal-open-scrollable {
   padding: 0;
   margin: 0;
   list-style: none;
-  
+  float: left;
 }
 
 #blog .tabgroup ul li {
@@ -865,7 +865,7 @@ body.modal-open-scrollable {
 #blog .tabgroup ul li img {
   float: left;
   margin-right: 30px;
-  max-width: 100%;
+  width: 250px;
   overflow: hidden;
 }
 #blog .tabgroup ul li .text-content {
@@ -1076,29 +1076,6 @@ body.modal-open-scrollable {
     z-index:5;
   }
 
-
-
-  /* Modales */
-  
-  .modal {
-    padding-top: 0 !important;
-  }
-  .modal-dialog {
-      width: 96%;
-      margin: 20px auto;
-      vertical-align: middle;
-  }
-  /* Centrado vertical usando Flexbox para móviles */
-  .modal-dialog {
-      display: flex;
-      align-items: center;
-      height: 100%;
-  }
-  .modal-content {
-      margin: auto;
-  }
-
-
 }
 
 @media (max-width: 690px) {
@@ -1139,12 +1116,14 @@ body.modal-open-scrollable {
   }
 
   #blog .tabgroup ul li img {
-    float: none;
-    width: 100%;
-    margin-bottom: 15px;
+    float: left;
+    margin-right: 30px;
+    max-width: 100%;
+    overflow: hidden;
   }
   #blog .tabgroup ul li .text-content {
     display: block;
+    
   }
 
   #contact-content {
@@ -1152,24 +1131,4 @@ body.modal-open-scrollable {
     padding-right: 15px;
   }
 
-}
-
-@media (max-width: 767px) {
-  .modal {
-      padding-top: 0 !important;
-  }
-  .modal-dialog {
-      width: 96%;
-      margin: 20px auto;
-      vertical-align: middle;
-  }
-  /* Centrado vertical usando Flexbox para móviles */
-  .modal-dialog {
-      display: flex;
-      align-items: center;
-      height: 60%;
-  }
-  .modal-content {
-      margin: auto;
-  }
 }
