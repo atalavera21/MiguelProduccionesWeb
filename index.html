@@ -7,7 +7,7 @@
     <title>Miguel Producciones - Portafolio</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="img/logo2.ico">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -15,6 +15,24 @@
     <link rel="stylesheet" href="css/light-box.css">
     <link rel="stylesheet" href="css/owl-carousel.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -209,23 +227,27 @@
         <section id="featured" class="content-section">
             <div class="section-heading">
                 <h1>Miguel <em>Producciones</em></h1>
-            </div>
-            <div class="section-content">
-                <div style="text-align: left;">
-                    <p>En Miguel Producciones nos dedicamos a la producción de eventos, fotografía y video profesional.
-                        <br>Con más de 20 años capturando momentos únicos, nos especializamos en transformar cada evento
-                        social en una experiencia visual inolvidable. Nuestra trayectoria profesional garantiza
-                        resultados modernos, creativos y personalizados para cada cliente.
-                    </p>
+                <p class="introduccion">
+                    Productora audiovisual especializada en eventos sociales con más de 20 años capturando momentos únicos con fotografía y video profesional. Transformamos cada evento en una experiencia visual inolvidable, con resultados creativos y personalizados.
+                </p>
+            </div>  
+            <div class="box-video">                
+                <div class="video-container">
+                    <video width="100%" controls>
+                        <source src="img/Portafolio/videos/entrada.mp4" type="video/mp4">
+                        Tu navegador no soporta el tag de video.
+                    </video>
                 </div>
             </div>
+            
+            
         </section>
-
+        <br><br>
         <!-- Servicios -->
         <section id="featured" class="content-section">
             <div class="section-heading">
                 <h1>Nuestros<br><em>Servicios</em></h1>
-                <p>Cobertura integral de eventos: Video, fotografía, diplomas, togas, y más.
+                <p class="introduccion">Cobertura integral de eventos: Video, fotografía, diplomas, togas, y más.
                 </p>
             </div>
             <div class="section-content">
@@ -234,10 +256,10 @@
                         <div class="image">
                             <img src="img/Servicios/fotografia_01.jpg" alt="">
                         </div>
-                        <div class="text-content">
+                        <div class="text-content Subtitle">
                             <h4>Video y Fotografía</h4>
                             <span>Tus momentos, nuestra inspiración.<em></em></span>
-                            <p>Servicio de video y fotografía para todo tipo de eventos sociales, garantizando que cada
+                            <p class="introduccion">Servicio de video y fotografía para todo tipo de eventos sociales, garantizando que cada
                                 detalle sea inmortalizado de manera profesional.</p>
                         </div>
                     </div>
@@ -245,14 +267,14 @@
                         <div class="image">
                             <img src="img/Servicios/Diploma.jpg" alt="">
                         </div>
-                        <div class="text-content">
+                        <div class="text-content Subtitle">
                             <h4>Diplomas & Anuarios</h4>
                             <span>Tu trayectoria académica, inmortalizada con orgullo.</span>
                             <p>Celebramos tus logros con diplomas personalizados y anuarios que capturan los momentos
                                 más significativos de tu trayectoria escolar.</p>
                         </div>
                     </div>
-                    <div class="item">
+                    <!-- <div class="item">
                         <div class="image">
                             <img src="img/blog_1.jpg" alt="">
                             <div class="featured-button button">
@@ -350,7 +372,7 @@
                             <p>#9 Suspendisse suscipit nulla sed nisl fermentum, auctor suscipit nunc rhoncus. Proin
                                 faucibus metus diam, nec hendrerit purus pharetra in.</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -359,7 +381,7 @@
         <!-- Proyectos Recientes -->
         <section id="projects" class="content-section">
             <div class="section-heading">
-                <h1>Eve<br><em>Recientes</em></h1>
+                <h1>Últimos<br><em>Eventos</em></h1>
                 <p>Descubre nuestros últimos trabajos ,
                     <br>en fotografía de eventos.
                 </p>
@@ -449,18 +471,15 @@
 
 
         <!-- Presentación -->
-        <section id="video" class="content-section">
+        <!-- <section id="video" class="content-section">
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-heading">
-                        <h1>This is a <em>company</em> presentation.</h1>
-                        <p>Praesent pellentesque efficitur magna, sed pellentesque neque malesuada vitae.</p>
+                        <h1><em> Miguel</em> Producciones presentación</h1>
+                        <p>Productora audivisual especializada en la cobertura integral de tipo de eventos sociales.</p>
                     </div>
                     <div class="text-content">
-                        <p>In eget ipsum sed lorem vehicula luctus. Curabitur non dolor rhoncus, hendrerit justo sit
-                            amet, vestibulum turpis. Pellentesque id auctor tellus, vel ultricies augue. Duis
-                            condimentum aliquet blandit. Fusce rhoncus et eros ut pharetra. Phasellus convallis
-                            ultricies ligula ac gravida.</p>
+                        <p>En Miguel Producciones, capturamos tus mejores momentos con fotografía y video profesional, asegurando recuerdos únicos y llenos de vida en cada evento social..</p>
                     </div>
                     <div class="accent-button button">
                         <a href="#blog">Continue Reading</a>
@@ -474,21 +493,21 @@
                         </div>
                         <div class="video-container">
                             <iframe width="100%" height="520"
-                                src="https://www.youtube.com/embed/9xx3tLj94fA?rel=0&amp;showinfo=0" frameborder="0"
+                                src="img/Portafolio/videos/entrada.mp4" 
                                 allowfullscreen="allowfullscreen"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
         <!-- Portafolio -->
         <section id="blog" class="content-section">
             <div class="section-heading">
-                <h1>Blog<br><em>Entries</em></h1>
-                <p>Curabitur hendrerit mauris mollis ipsum vulputate rutrum.
-                    <br>Phasellus luctus odio eget dui imperdiet.
+                <h1>Portafolio de <br><em>Eventos</em></h1>
+                <p>¡Bienvenido a nuestro portafolio!  
+                    <br>Te invitamos a conocer nuestro trabajo, capturando momentos únicos e inmortalizando todo tipo de eventos, desde bodas, quinceaños hasta sesiones personalizadas.
                 </p>
             </div>
             <div class="section-content">
@@ -497,7 +516,7 @@
                         <ul class="tabs clearfix" data-tabgroup="first-tab-group">
                             <li><a href="#boda" class="active">Bodas</a></li>
                             <li><a href="#quince">15 Años</a></li>
-                            <li><a href="#sesion">Sesiones</a></li>
+                            <li><a href="#babyShower">BabyShower</a></li>
                             <li><a href="#Otro">Otros</a></li>
                         </ul>
                         <section id="first-tab-group" class="tabgroup">
@@ -506,34 +525,26 @@
                                 <ul>
                                     <li>
                                         <div class="item">
-                                            <img src="img/Portafolio/boda/portada01.jpg" alt="">
-                                            <div class="text-content">
+                                            <img src="img/Portafolio/boda/portada01.jpg" alt="">                                            
+                                            <div class="text-content">                                                                                               
                                                 <h4>Nathaly & Marcelo</h4>
-                                                <span>25 July 2024</span>
-                                                <p>Celebraron su unión en un día lleno de significado, rodeados de sus
-                                                    seres queridos. Cada promesa, cada mirada, y cada sonrisa sellaron
-                                                    un compromiso de amor eterno. Este es solo el inicio de un viaje
-                                                    compartido, donde la confianza, el respeto y la alegría serán las
-                                                    bases de una vida plena y feliz juntos.</p>
+                                                <span>27 Julio 2024</span>
+                                                <p>Rodeados de sus seres queridos, sus miradas se entrelazaron en una promesa silenciosa. La confianza, el respeto y la alegría marcarían el camino de su nueva vida juntos. <br>
+                                                    Y un 27 de julio, sellaron su amor con el matrimonio.</p>
                                                     <div class="accent-button button">
                                                         <a href="#" onclick="openModal('boda1'); return false;">Ver más</a>
                                                     </div>
                                             </div>
-                                        </div>
+                                        </div> 
                                     </li>
 
                                     <li>
                                         <div class="item">
                                             <img src="img/Portafolio/boda/portada02.jpg" alt="">
-                                            <div class="text-content">
-                                                <h4>Cras commodo odio ut</h4>
-                                                <span>16 July 2018</span>
-                                                <p>En un día inolvidable, Nathaly y Marcelo entrelazaron sus vidas con
-                                                    un amor profundo y sincero. Rodeados de familiares y amigos, se
-                                                    prometieron un futuro lleno de felicidad y respeto mutuo. Esta boda
-                                                    marca el comienzo de una hermosa historia que seguirán escribiendo
-                                                    juntos, superando desafíos y celebrando cada momento con alegría y
-                                                    gratitud.</p>
+                                            <div  class="text-content">                                                
+                                                <h4>Miguel y Estephany</h4>
+                                                <span>03 Agosto 2018</span>
+                                                <p>El 3 de agosto de 2024, Nathaly y Marcelo unieron sus vidas con un amor sincero, rodeados de sus seres queridos. <br>En su boda, se prometieron un futuro de felicidad y respeto, comenzando juntos una hermosa historia llena de alegría y gratitud.</p>
 
                                                     <div class="accent-button button">
                                                         <a href="#" onclick="openModal('boda2'); return false;">Ver más</a>
@@ -544,9 +555,9 @@
 
                                     <li>
                                         <div class="item">
-                                            <img src="img/blog_3.jpg" alt="">
+                                            <img src="img/Portafolio/boda/Portada03_rec.jpg" alt="">
                                             <div class="text-content">
-                                                <h4>Sed at massa turpis</h4>
+                                                <br><h4>Fernando & Aracely</h4>
                                                 <span>10 July 2018</span>
                                                 <p>Unieron sus vidas en una celebración donde cada detalle reflejó la
                                                     profundidad de su amor. Con votos llenos de significado, prometieron
@@ -563,55 +574,45 @@
                                 </ul>
                             </div>
 
-                            <div id="tab2">
+                            <div id="quince">
                                 <ul>
                                     <li>
                                         <div class="item">
-                                            <img src="img/blog_3.jpg" alt="">
+                                            <img src="img/Portafolio/15años/Portada02.jpg" alt="">
                                             <div class="text-content">
-                                                <h4>Sed at massa turpis</h4>
-                                                <span>30 June 2018</span>
-                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
-                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
-                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
-                                                    maximus finibus.</p>
-
-                                                <div class="accent-button button">
-                                                    <a href="#contact">Continue Reading</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="item">
-                                            <img src="img/blog_1.jpg" alt="">
-                                            <div class="text-content">
-                                                <h4>Lorem ipsum dolor sit</h4>
+                                                <h4>Aracely</h4>
                                                 <span>24 June 2018</span>
-                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
-                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
-                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
-                                                    maximus finibus.</p>
-
+                                                <p>racely celebró sus quince años rodeada de alegría y cariño, iniciando una nueva etapa en su vida. El 25 de mayo de 2024 será un día que marcará el comienzo de grandes sueños y momentos inolvidables. ¡Felicidades, Aracely!</p>
                                                 <div class="accent-button button">
-                                                    <a href="#contact">Continue Reading</a>
+                                                    <a href="#" onclick="openModal('quince2'); return false;">Ver más</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="item">
-                                            <img src="img/blog_2.jpg" alt="">
+                                            <img src="img/Portafolio/15años/Portada01.jpg" alt="">
                                             <div class="text-content">
-                                                <h4>Cras commodo odio ut</h4>
-                                                <span>12 June 2018</span>
-                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
-                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
-                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
-                                                    maximus finibus.</p>
-
+                                                <h4>Angelina</h4>
+                                                <span>10 Agosto 2024</span>
+                                                <p>El 10 de agosto de 2024, Angelina celebró sus quince años, marcando el comienzo de una nueva etapa llena de sueños y oportunidades. Que este día tan especial sea solo el inicio de una vida llena de felicidad, amor y éxitos. <br>
+                                                    ¡Felicidades, Angelina!</p>
+                                                    <div class="accent-button button">
+                                                        <a href="#" onclick="openModal('quince1'); return false;">Ver más</a>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </li>                                    
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/Portafolio/15años/Portada03.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Samantha</h4>
+                                                <span>15 Junio 2024</span>
+                                                <p>Samantha celebró sus quince años con mucha alegría y rodeada de sus seres queridos, dando inicio a una etapa llena de sueños y emociones. <br>
+                                                     Un día inolvidable, el 15 de junio de 2024.</p>
                                                 <div class="accent-button button">
-                                                    <a href="#contact">Continue Reading</a>
+                                                    <a href="#" onclick="openModal('quince3'); return false;">Ver más</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -619,55 +620,45 @@
                                 </ul>
                             </div>
 
-                            <div id="tab3">
+                            <div id="babyShower">
                                 <ul>
                                     <li>
                                         <div class="item">
-                                            <img src="img/blog_2.jpg" alt="">
+                                            <img src="img/Portafolio/babyShower/Portada01.jpg" alt="">
                                             <div class="text-content">
-                                                <h4>Cras commodo odio ut</h4>
-                                                <span>26 May 2018</span>
-                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
-                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
-                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
-                                                    maximus finibus.</p>
-
+                                                <h4>¡Bienvenido Cristhian!</h4>
+                                                <span>20 Julio 2024</span>
+                                                <p>El 20 de julio de 2024, dimos la bienvenida a Cristhian en su baby shower, rodeados de amor y alegría. Que este nuevo capítulo esté lleno de bendiciones y momentos inolvidables. <br>
+                                                    ¡Bienvenido, Cristhian!</p>
+                                                    <div class="accent-button button">
+                                                        <a href="#" onclick="openModal('baby1'); return false;">Ver más</a>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/Portafolio/babyShower/Portada02.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>¡Bienvenido Liam!</h4>
+                                                <span>01 Junio 2024</span>
+                                                <p>Celebramos la llegada de Liam, quien nació el 1 de junio de 2024. Que su vida esté llena de amor, alegría y momentos inolvidables. <br> ¡Bienvenido al mundo, Liam!</p>
                                                 <div class="accent-button button">
-                                                    <a href="#contact">Continue Reading</a>
+                                                    <a href="#" onclick="openModal('baby2'); return false;">Ver más</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="item">
-                                            <img src="img/blog_1.jpg" alt="">
+                                            <img src="img/Portafolio/babyShower/Portada03.jpg" alt="">
                                             <div class="text-content">
-                                                <h4>Lorem ipsum dolor sit</h4>
-                                                <span>22 May 2018</span>
-                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
-                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
-                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
-                                                    maximus finibus.</p>
-
+                                                <h4>Bienvenido Franchesco</h4>
+                                                <span>02 Septiembre 2024</span>
+                                                <p>El 2 de septiembre de 2024 llegó Franchesco, llenando de luz y esperanza los corazones de su familia. Que su camino esté siempre lleno de risas, aventuras y momentos llenos de amor. <br>
+                                                     ¡Bienvenido, Franchesco, a este hermoso viaje llamado vida!</p>
                                                 <div class="accent-button button">
-                                                    <a href="#contact">Continue Reading</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="item">
-                                            <img src="img/blog_3.jpg" alt="">
-                                            <div class="text-content">
-                                                <h4>Integer ultrices augue</h4>
-                                                <span>8 May 2018</span>
-                                                <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
-                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
-                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
-                                                    maximus finibus.</p>
-
-                                                <div class="accent-button button">
-                                                    <a href="#contact">Continue Reading</a>
+                                                    <a href="#" onclick="openModal('baby3'); return false;">Ver más</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -757,8 +748,8 @@
             <div id="contact-content">
                 <div class="section-heading">
                     <h1>Contacto<br><em>Miguel Producciones</em></h1>
-                    <p>Curabitur hendrerit mauris mollis ipsum vulputate rutrum.
-                        <br>Phasellus luctus odio eget dui imperdiet.
+                    <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. Completa el formulario y nos pondremos en contacto contigo lo antes posible. <br>
+                        ¡Estamos aquí para ayudarte!
                     </p>
 
                 </div>
@@ -768,30 +759,30 @@
                             <div class="col-md-4">
                                 <fieldset>
                                     <input name="name" type="text" class="form-control" id="name"
-                                        placeholder="Your name..." required="">
+                                        placeholder="Nombre" required="">
                                 </fieldset>
                             </div>
                             <div class="col-md-4">
                                 <fieldset>
                                     <input name="email" type="email" class="form-control" id="email"
-                                        placeholder="Your email..." required="">
+                                        placeholder="Correo Electrónico" required="">
                                 </fieldset>
                             </div>
                             <div class="col-md-4">
                                 <fieldset>
                                     <input name="subject" type="text" class="form-control" id="subject"
-                                        placeholder="Subject..." required="">
+                                        placeholder="Asunto" required="">
                                 </fieldset>
                             </div>
                             <div class="col-md-12">
                                 <fieldset>
                                     <textarea name="message" rows="6" class="form-control" id="message"
-                                        placeholder="Your message..." required=""></textarea>
+                                        placeholder="Mensaje" required=""></textarea>
                                 </fieldset>
                             </div>
                             <div class="col-md-12">
                                 <fieldset>
-                                    <button type="submit" id="form-submit" class="btn">Send Message Now</button>
+                                    <button type="submit" id="form-submit" class="btn">Enviar Mensaje</button>
                                 </fieldset>
                             </div>
                         </div>
@@ -800,9 +791,9 @@
             </div>
         </section>
         <section class="footer">
-            <p>Copyright &copy; 2019 Company Name
+            <p>Copyright &copy; 2024 Miguel Producciones
 
-                . Design: TemplateMo</p>
+                . Design: Adrián Talavera</p>
         </section>
     </div>
 
