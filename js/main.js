@@ -42,6 +42,37 @@ jQuery(document).ready(function ($) {
 
 
 
+        var owl = $('.owl-carousel');
+        var startX;
+        var startY;
+        var threshold = 50; // Ajusta este valor según sea necesario
+      
+        owl.on('touchstart', function(e) {
+          var touch = e.originalEvent.touches[0];
+          startX = touch.pageX;
+          startY = touch.pageY;
+        });
+      
+        owl.on('touchmove', function(e) {
+          if (!startX || !startY) {
+            return;
+          }
+      
+          var touch = e.originalEvent.touches[0];
+          var diffX = startX - touch.pageX;
+          var diffY = startY - touch.pageY;
+      
+          if (Math.abs(diffX) > Math.abs(diffY)) {
+            // El usuario está intentando deslizar horizontalmente
+            e.preventDefault();
+          } else {
+            // El usuario está intentando hacer scroll vertical
+            e.stopPropagation();
+          }
+        });
+
+
+
         $(".box-video").click(function () {
             $('iframe', this)[0].src += "&amp;autoplay=1";
             $(this).addClass('open');

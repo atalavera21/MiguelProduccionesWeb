@@ -38,26 +38,29 @@ const EventModal = ({ isOpen, onClose, event }) => {
     }}>
       <div style={{
         backgroundColor: 'white',
-        padding: '20px',
+        padding: '30px',
         borderRadius: '10px',
         maxWidth: '90%',
-        maxHeight: '90vh',
+        maxHeight: '110vh',
         overflow: 'hidden',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        justifyContent: 'center', 
         boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+        
       }}>
         <h2 style={{ fontSize: '24px', marginBottom: '20px', color: '#333' }}>{event.title}</h2>
-        <div style={{ position: 'relative', width: '100%', height: '60vh', marginBottom: '20px' }}>
+        <div style={{ position: 'relative', width: '100%', height: '56vh', marginBottom: '10px', backgroundColor: 'white' }}>
           <img
             src={event.images[currentIndex]}
             alt={`Event photo ${currentIndex + 1}`}
             style={{
               width: '100%',
-              height: '100%',
+              height: '80%',
               objectFit: 'contain',
-              objectPosition: 'center'
+              objectPosition: 'center',
+              
             }}
             onError={(e) => {
               e.target.onerror = null;
@@ -100,16 +103,13 @@ const EventModal = ({ isOpen, onClose, event }) => {
           >
             {'>'}
           </button>
-        </div>
-        <p style={{ fontStyle: 'italic', textAlign: 'center', marginBottom: '20px', color: '#666' }}>
-          "El amor es paciente, es bondadoso. El amor no es envidioso ni jactancioso ni orgulloso."
-        </p>
-        
+        </div>       
+      
         <button 
           onClick={onClose} 
           style={{ 
             padding: '10px 20px', 
-            backgroundColor: '#4a5568', 
+            backgroundColor: '#e95e02', 
             color: 'white', 
             border: 'none', 
             borderRadius: '5px', 
@@ -118,9 +118,8 @@ const EventModal = ({ isOpen, onClose, event }) => {
           }}
         >
           Cerrar
-        </button>
-
-        <div style={{ fontSize: '14px', color: '#888', marginBottom: '20px' }}>
+        </button>      
+        <div style={{ fontSize: '14px', color: '#888', marginBottom: '20px', marginTop: '10px' }}>
           Imagen {currentIndex + 1} de {event.images.length}
         </div>
 
@@ -170,7 +169,7 @@ const eventData = {
     ]
   },
   boda2: {
-    title: "Adrián & Maciel",
+    title: "Miguel & Estephany",
     images: [
       "img/Portafolio/boda/08.jpg",
       "img/Portafolio/boda/09.jpg",
@@ -181,16 +180,79 @@ const eventData = {
     ]
   },
   boda3: {
-    title: "Renato & Nathaly",
+    title: "Fernando & Aracely",
     images: [
-      "img/Portafolio/boda/08.jpg",
-      "img/Portafolio/boda/09.jpg",
-      "img/Portafolio/boda/10.jpg",
-      "img/Portafolio/boda/11.jpg",
-      "img/Portafolio/boda/12.jpg"
+      "img/Portafolio/boda/13.jpg",
+      "img/Portafolio/boda/14.jpg",
+      "img/Portafolio/boda/15.jpg",
+      "img/Portafolio/boda/16.jpg",
+      "img/Portafolio/boda/17.jpg"
 
     ]
-  }
+  },
+  quince1: {
+    title: "Quince Años Angelina",
+    images: [
+      "img/Portafolio/15años/00.jpg",
+      "img/Portafolio/15años/01.jpg",
+      "img/Portafolio/15años/02.jpg",
+      "img/Portafolio/15años/03.jpg",
+      "img/Portafolio/15años/04.jpg",
+      "img/Portafolio/15años/05.jpg"
+    ]
+  },
+  quince2: {
+    title: "Quince Años Aracely",
+    images: [
+      "img/Portafolio/15años/06.jpg",
+      "img/Portafolio/15años/07.jpg",
+      "img/Portafolio/15años/08.jpg",
+      "img/Portafolio/15años/09.jpg",
+      "img/Portafolio/15años/10.jpg"      
+    ]
+  },
+  quince3: {
+    title: "Quince Años Samantha",
+    images: [
+      "img/Portafolio/15años/11.jpg",
+      "img/Portafolio/15años/12.jpg",
+      "img/Portafolio/15años/13.jpg",
+      "img/Portafolio/15años/14.jpg",
+      "img/Portafolio/15años/15.jpg"      
+    ]
+  },
+  baby1: {
+    title: "¡Bienvenido Cristhian!",
+    images: [
+      "img/Portafolio/babyShower/00.jpg",
+      "img/Portafolio/babyShower/01.jpg",
+      "img/Portafolio/babyShower/02.jpg",
+      "img/Portafolio/babyShower/03.jpg",
+      "img/Portafolio/babyShower/04.jpg",
+      "img/Portafolio/babyShower/05.jpg",         
+    ]
+  },  
+  baby2: {
+    title: "¡Bienvenido Liam!",
+    images: [
+      "img/Portafolio/babyShower/06.jpg",
+      "img/Portafolio/babyShower/07.jpg",
+      "img/Portafolio/babyShower/08.jpg",
+      "img/Portafolio/babyShower/09.jpg",
+      "img/Portafolio/babyShower/10.jpg"      
+    ]
+  },  
+  baby3: {
+    title: "¡Bienvenido Franchesco!",
+    images: [
+      "img/Portafolio/babyShower/11.jpg",
+      "img/Portafolio/babyShower/12.jpg",
+      "img/Portafolio/babyShower/13.jpg",
+      "img/Portafolio/babyShower/14.jpg",
+      "img/Portafolio/babyShower/15.jpg",      
+      "img/Portafolio/babyShower/16.jpg",
+    ]
+  },  
   // Agrega más eventos aquí
 };
 
